@@ -51,6 +51,10 @@ openssl pkcs12 -info -in keyStore.p12
 ```openssl
 openssl x509 -inform der -in certificate.cer -out certificate.pem
 ```
+* Convert a PEM key file to DER
+```openssl
+openssl rsa -outform der -in privateKey.key -out privateKey.der
+```
 * Convert a PEM file to DER
 ```openssl
 openssl x509 -outform der -in certificate.pem -out certificate.der

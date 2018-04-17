@@ -789,6 +789,11 @@ pre {
 <pre lang="openssl"><code>openssl x509 -inform der -in certificate.cer -out certificate.pem
 </code></pre>
 <ul>
+<li>Convert a PEM key file to DER</li>
+</ul>
+<pre lang="openssl"><code>openssl rsa -outform der -in privateKey.key -out privateKey.der
+</code></pre>
+<ul>
 <li>Convert a PEM file to DER</li>
 </ul>
 <pre lang="openssl"><code>openssl x509 -outform der -in certificate.pem -out certificate.der
